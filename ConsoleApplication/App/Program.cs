@@ -4,7 +4,7 @@ namespace App
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
@@ -13,7 +13,7 @@ namespace App
 
             var startup = new Startup(configuration);
             startup.ConfigureServices();
-            startup.Run();
+            await startup.Run();
         }
     }
 }
