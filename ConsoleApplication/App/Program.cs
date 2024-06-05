@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
 
 namespace App
 {
@@ -6,7 +6,14 @@ namespace App
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json")
+                .Build();
+
+            var startup = new Startup(configuration);
+            startup.ConfigureServices();
+            startup.Run();
         }
     }
 }
