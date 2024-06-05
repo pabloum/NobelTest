@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="container">
+        <div id="main-div" class="column">
+            <h1>Campaing XYZ</h1>
+        
+            <div class="customer-information">
+                <table id="customer-table">
+                    <tbody>
+                        <tr class="customer-row">
+                            <td class="customer-cell">
+                                <div>First Name</div>
+                                <div><input type="text" name="input1" id="input1"></div>
+                            </td>
+                            <td class="customer-cell">
+                                <div>Last Name</div>
+                                <div><input type="text" name="input1" id="input1"></div>
+                            </td>
+                            <td class="customer-cell">
+                                <div>City</div>
+                                <div><input type="text" name="input1" id="input1"></div>
+                            </td>
+                        </tr>
+                        <tr class="customer-row">
+                            <td class="customer-cell">
+                                <div>State</div>
+                                <div><input type="text" name="input1" id="input1"></div>
+                            </td>
+                            <td class="customer-cell">
+                                <div>Zip</div>
+                                <div><input type="text" name="input1" id="input1"></div>
+                            </td>
+                            <td class="customer-cell">
+                                <div>Company</div>
+                                <div><input type="text" name="input1" id="input1"></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="purpose-of-call">
+                <h2>Intro</h2>
+                <div>
+                    Agent: Hello and thank you for calling Noble My name is Juan, and I'm here to assist you today. May I have the pleasure of knowing whom I'm speaking with?
+                    <br>
+                    <br>
+                    Customer: Hi, I'm Pablo.
+                    <br>
+                    <br>
+                    Agent: Thank you, Pablo| How can I assist you today? Is there something specific you're looking for or need help with?
+                    <br>
+                    <br>
+                    Customer: I have a question about [Product/Service].
+                </div>
+            </div>
+        
+            <div class="dynamic-table">
+                <h2>Dynamic Table</h2>
+        
+                <table id="data-table">
+                    <thead>
+                        <tr>
+                            <th class="dynamic-th">Description</th>
+                            <th class="dynamic-th">Type</th>
+                            <th class="dynamic-th">Topics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="secondary-div" class="column">
+            <div><th>Dispositions</th></div>
+            <div class="dispositions">Dispo 1</div>
+            <div class="dispositions">Dispo 2</div>
+            <div class="dispositions">Dispo 3</div>
+            <div class="dispositions">Dispo 4</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
